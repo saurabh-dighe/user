@@ -262,7 +262,7 @@ function mongoConnect() {
 }
 }
 
-if (process.env.DOCUMENTDB == 'true') {
+// if (process.env.DOCUMENTDB == 'true') {
 function mongoConnect() {
     return new Promise((resolve, reject) => {
     var mongoURL = process.env.MONGO_URL || 'mongodb://username:password@mongodb:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false';
@@ -281,7 +281,7 @@ function mongoConnect() {
 });
 });
 }
-}
+
 
 
 
