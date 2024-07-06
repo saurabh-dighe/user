@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: user
-        image: 992382386864.dkr.ecr.us-east-1.amazonaws.com/user:302
+        image: 992382386864.dkr.ecr.us-east-1.amazonaws.com/user:500
         ports:
         - containerPort: 8080
         #livenessProbe
